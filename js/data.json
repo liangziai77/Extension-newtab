@@ -1,0 +1,190 @@
+[{
+	"icon": "shoucang",
+	"title": "常用/站点",
+	"node": [{
+		"url": "https://www.ae85.cn/",
+		"icon": "128",
+		"text": "小良网址"
+	}, {
+		"url": "https://github.com/",
+		"icon": "github",
+		"text": "GitHub"
+	}, {
+		"url": "https://dash.cloudflare.com/",
+		"icon": "cloudflare",
+		"text": "Cloudflare"
+	}, {
+		"url": "https://www.kdocs.cn/",
+		"icon": "jinshanwendang",
+		"text": "金山文档"
+	}, {
+		"url": "https://regex101.com/",
+		"icon": "regex101",
+		"text": "正则调试"
+	}, {
+		"url": "https://weibo.com/",
+		"icon": "weibo",
+		"text": "微博"
+	}, {
+		"url": "https://ai.jaze.top/",
+		"icon": "ai",
+		"text": "ai对话"
+	},
+	{
+		"url": "https://yiyan.baidu.com/",
+		"icon": "yiyan",
+		"text": "文心一言"
+	}, {
+		"url": "https://mail.google.com/",
+		"icon": "gmail",
+		"text": "Gmail"
+	}, {
+		"url": "https://outlook.live.com/mail/",
+		"icon": "outlook",
+		"text": "Outlook"
+	}, {
+		"url": "https://mail.qq.com/",
+		"icon": "qqmail",
+		"text": "QQ邮箱"
+	}]
+},{
+	"icon": "gongju",
+	"title": "存储/工具",
+	"node": [{
+		"url": "https://wx.qq.com/",
+		"icon": "drive",
+		"text": "谷歌硬盘"
+	}, {
+		"url": "https://pan.baidu.com/",
+		"icon": "baidu",
+		"text": "百度网盘"
+	},{
+		"url": "https://up.woozooo.com/",
+		"icon": "lanzouyun",
+		"text": "蓝奏云"
+	}, {
+		"url": "https://cowtransfer.com/",
+		"icon": "niunai",
+		"text": "奶牛快传"
+	}, {
+		"url": "https://tools.miku.ac/",
+		"icon": "miku",
+		"text": "MikuTools"
+	}, {
+		"url": "http://tool.chinaz.com/",
+		"icon": "chinaz",
+		"text": "站长工具"
+	}]
+}, {
+	"icon": "sheji",
+	"title": "办公/设计",
+	"node": [{
+		"url": "https://www.canva.cn/",
+		"icon": "canva",
+		"text": "可画"
+	},{
+		"url": "https://www.iconfont.cn/",
+		"icon": "aliconfont",
+		"text": "阿里图标"
+	}, {
+		"url": "https://huaban.com/",
+		"icon": "huabanwang",
+		"text": "花瓣"
+	},{
+		"url": "https://tinify.cn/",
+		"icon": "tinify",
+		"text": "TinyPNG"
+	},{
+		"url": "https://onlineconvertfree.com/zh/convert/",
+		"icon": "onlineconvertfree",
+		"text": "格式转换"
+	},{
+		"url": "https://www.yuque.com/",
+		"icon": "yuque",
+		"text": "语雀"
+	}]
+}, {
+	"icon": "kaifa",
+	"title": "开发/云",
+	"node": [{
+		"url": "https://www.aliyun.com/",
+		"icon": "aliyun",
+		"text": "阿里云"
+	}, {
+		"url": "https://cloud.tencent.com/",
+		"icon": "tengxunyun",
+		"text": "腾讯云"
+	}, {
+		"url": "https://www.qiniu.com/",
+		"icon": "qiniuyun",
+		"text": "七牛云"
+	}, {
+		"url": "https://www.w3school.com.cn/",
+		"icon": "w3school",
+		"text": "W3school"
+	}, {
+		"url": "https://msdn.itellyou.cn/",
+		"icon": "msdn",
+		"text": "MSDN"
+	}]
+}, {
+	"icon": "luntan",
+	"title": "论坛/学习",
+	"node": [{
+		"url": "https://juejin.im/",
+		"icon": "juejin",
+		"text": "掘金"
+	}, {
+		"url": "https://segmentfault.com/",
+		"icon": "segmentfault",
+		"text": "SF思否"
+	}, {
+		"url": "https://www.52pojie.cn/",
+		"icon": "wuaipojie",
+		"text": "吾爱破解"
+	}, {
+		"url": "https://leetcode-cn.com/",
+		"icon": "leetcode",
+		"text": "力扣"
+	}]
+}, {
+	"icon": "shiping",
+	"title": "视频/直播",
+	"node": [{
+		"url": "https://www.youtube.com/",
+		"icon": "youtube",
+		"text": "YouTube"
+	}, {
+		"url": "https://www.bilibili.com/",
+		"icon": "bilibili",
+		"text": "哔哩哔哩"
+	}, {
+		"url": "https://www.youku.com/",
+		"icon": "youku",
+		"text": "优酷"
+	}, {
+		"url": "https://v.qq.com/",
+		"icon": "tengxunshipin",
+		"text": "腾讯视频"
+	}, {
+		"url": "https://www.iqiyi.com/",
+		"icon": "iqy",
+		"text": "爱奇艺"
+	}, {
+		"url": "https://www.huya.com/",
+		"icon": "huya",
+		"text": "虎牙直播"
+	}, {
+		"url": "https://www.douyu.com/",
+		"icon": "douyu",
+		"text": "斗鱼直播"
+	}, {
+		"url": "https://www.xinpianchang.com/",
+		"icon": "xinpianchang",
+		"text": "新片厂"
+	}, {
+		"url": "https://555mv.net/",
+		"icon": "555dy",
+		"text": "555电影"
+	}]
+}]

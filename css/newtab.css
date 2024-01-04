@@ -1,0 +1,525 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	background: #ffffff;
+}
+
+html {
+	font-family: 'SF-Pro-Display-Semibold',
+		'PingFangSC-Regular',
+		'Microsoft YaHei UI',
+		'Microsoft YaHei',
+		helvetica,
+		sans-serif;
+	font-weight: normal;
+	color: #000;
+}
+
+form,
+input,
+button {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+input::-webkit-input-placeholder {
+	color: #ccc;
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+
+ul,
+li {
+	display: block;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+#content {
+	width: 100%;
+	height: 100%;
+}
+
+#menu {
+	width: 50px;
+	height: 50px;
+	transform: scale(0.8);
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	z-index: 1;
+	cursor: pointer;
+	z-index: 2001;
+}
+
+#menu i {
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin: 24px auto;
+	width: 30px;
+	height: 2px;
+	background: #777;
+	transition: 0.3s all ease;
+}
+
+#menu i:before {
+	content: '';
+	width: 20px;
+	height: 2px;
+	top: -8px;
+	background: #777;
+	position: absolute;
+	right: 0;
+	transition: 0.3s all ease;
+}
+
+#menu i:after {
+	content: '';
+	width: 20px;
+	height: 2px;
+	bottom: -8px;
+	background: #777;
+	position: absolute;
+	left: 0;
+	transition: 0.3s all ease;
+}
+
+#menu.on {
+	border-radius: 25px;
+}
+
+#menu.on i {
+	width: 25px;
+	background: #777;
+}
+
+#menu.on i:before {
+	top: -5px;
+	transform: rotate(45deg);
+	width: 14px;
+	right: -1px;
+	left: auto;
+	background: #777;
+}
+
+#menu.on i:after {
+	bottom: -5px;
+	transform: rotate(-45deg);
+	width: 14px;
+	right: -1px;
+	left: auto;
+	background: #777;
+}
+
+.list {
+	width: 337px;
+	padding: 0 20px;
+	height: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+	position: absolute;
+	right: 0px;
+	z-index: 2000;
+	background: #efefef;
+	transition: 0.3s all ease;
+	webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.list::-webkit-scrollbar {
+	display: none;
+}
+
+.list.closed {
+	right: -380px;
+}
+
+.list ul {
+	width: 330px;
+	float: left;
+	padding: 0 0 20px;
+	margin-bottom: 20px;
+}
+
+.list ul li {
+	float: left;
+	margin: 5px;
+	width: 98px;
+	height: 28px;
+	text-align: left;
+	line-height: 30px;
+}
+
+.list ul li a {
+	width: 100%;
+	border-radius: 13px;
+	/* transition: 0.2s all linear; */
+	height: 100%;
+	display: block;
+	color: #242424;
+	font-weight: 500;
+	background: #ffffff;
+	text-align: left;
+	font-size: 13px;
+	border: 1px solid white;
+}
+
+.list ul li a i {
+	margin-right: 5px;
+	margin-left: 15px;
+	/* transition: 0.2s all linear; */
+	filter: alpha(Opacity=60);
+	opacity: 0.8;
+}
+
+.list ul li a i.iconfont {
+	font-size: 14px;
+}
+
+.list ul li:hover a {
+	border: 1px solid #5f5f5f;
+}
+
+.list ul li.title {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin: 30px 0 0;
+	text-align: left;
+	text-indent: 10px;
+	/*border-bottom: 1px dashed #dedede;*/
+	color: #242424;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.list ul li.title i {
+	color: #29f;
+	margin-right: 5px;
+	font-weight: normal;
+}
+
+.list ul li.title i {
+	color: #29f;
+	margin-right: 5px;
+	font-weight: normal;
+}
+
+#dh_list .icon {
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: -0.35em;
+	fill: currentColor;
+	overflow: hidden;
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.logo-box img {
+    width: 272px;
+    height: 71px;
+}
+
+.sousuo {
+    padding: 12px 10px 12px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.search-box {
+    height: 50px;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #00000026;
+    border-radius: 24px;
+    background-color: #fff;
+    /* justify-content: center; */
+}
+
+.search-box:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+}
+.yq-icon{
+    cursor: pointer;
+}
+
+.yq-icon img {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+.search-input {
+    box-sizing: border-box;
+    /* font-family: SF-Pro-Display-Semibold,PingFangSC-Regular,'Microsoft YaHei UI','Microsoft YaHei',helvetica,sans-serif; */
+    flex: 1;
+    height: 50px;
+    font-size: 18px;
+    color: #000000de;
+    border: none;
+    outline: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn-sou {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #f76949;
+    cursor: pointer;
+}
+
+.btn-sou span {
+    display: inline-block;
+    margin-top: 12px;
+    color: #fff;
+    font-size: 18px;
+    
+}
+
+.btn-sou:hover {
+    background-color: cornflowerblue;
+}
+
+.search-engine {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 97%;
+    background: #FFF;
+    padding: 15px 0 0 15px;
+    border-radius: 24px;
+    box-shadow: 0 1px 6px 0 #20212447;
+    /* transition: all 0.3s; */
+    display: none;
+    z-index: 999;
+  }
+  
+  .search-engine-head {
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-right: 15px;
+  }
+  
+  .search-engine-tit {
+    float: left;
+    margin: 0;
+    font-size: 14px;
+    color: #636363;
+  }
+  
+  .search-engine-tool {
+    float: right;
+    font-size: 14px;
+    color: #636363;
+  }
+  
+  .search-engine-tool>span {
+    display: inline-block;
+    width: 25px;
+    height: 15px;
+    font-size: 18px;
+    line-height: 15px;
+    cursor: pointer;
+  }
+  
+  .search-engine-tool>span.icon-kaiguanguan-kai {
+    color: #0e932e;
+  }
+  
+  .search-engine ul {
+    padding: 0;
+  }
+  
+  .search-engine ul::before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -15px;
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+  
+  }
+  
+  .search-engine-list::after {
+    content: '';
+    width: 70px;
+    height: 18px;
+    position: absolute;
+    top: -17px;
+    left: 1px;
+  }
+  
+  .search-engine-list li {
+    float: left;
+    width: 28%;
+    /* line-height: 30px; */
+    font-size: 14px;
+    padding: 4px 9px 4px 9px;
+    margin: 0 10px 10px 0;
+    background: #f9f9f9;
+    color: #636363;
+    cursor: pointer;
+    list-style: none;
+    border-radius: 12px;
+    border: 1px solid #ffffff;
+  }
+  
+  .search-engine-list li:hover {
+    background: #f9f9f9;
+    border: 1px solid #5f5f5f;
+  }
+  
+  .search-engine-list li i {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 2.5px;
+  }
+  
+  .search-engine-list .icon {
+    /* padding: 0 5px 0 0px; */
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+  }
+  .search-engine-list span{
+      font-size: 19px;
+      position: relative;
+      top: -7px;
+      left: 5px;
+  }
+
+
+  @media (max-width: 640px) {
+    .con {
+      top: -30%;
+    }
+  
+    .con .shlogo {
+      width: 320px;
+      height: 100px;
+    }
+  
+    .con .sou form .wd:focus {
+      background: #f1f1f1;
+      box-shadow: none;
+      border-color: #ccc
+    }
+  
+    .con .sou form button {
+      border-radius: 25px;
+    }
+  
+    .list {
+      width: 227px;
+    }
+  
+    .list ul {
+      width: 220px;
+    }
+  
+    .con .sou ul li {
+      width: 100px;
+      font-size: 12px;
+      text-indent: 30px;
+    }
+  
+    .home,
+    #menu {
+      top: 5px;
+    }
+  
+    .mywth {
+      left: 10px;
+      top: 20px;
+    }
+  }
+  
+  @media (max-height: 420px) {
+    .con {
+      margin: 0;
+      top: -30%;
+    }
+  
+    .con .sou form .wd {
+      text-indent: 50px;
+    }
+  
+    .con .sou form:after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      background: url(icon/lg.svg) no-repeat center/cover;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  
+    .con .shlogo {
+      display: none;
+    }
+  
+    .home,
+    #menu,
+    .foot {
+      display: none;
+    }
+  }
