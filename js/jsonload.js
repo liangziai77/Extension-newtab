@@ -6,7 +6,7 @@ $(function () {
 
             const node = data[i].node;
             for (var j = 0; j < node.length; j++) {
-                const addList = `<li><a rel="nofollow" href="${node[j].url}" target="_blank"><img src="/imgs/icon/${node[j].icon}.png" alt="" class="icon">${node[j].text}</a></li>`
+                const addList = `<li><a rel="nofollow" href="${node[j].url}"><img src="/imgs/icon/${node[j].icon}.png" alt="" class="icon">${node[j].text}</a></li>`
                 // const addList = `<li><a rel="nofollow" href="${node[j].url}" target="_blank"><img src="${node[j].url}favicon.ico" alt="" class="icon">${node[j].text}</a></li>`
                 $('#dh_list').append(addList);
             }
